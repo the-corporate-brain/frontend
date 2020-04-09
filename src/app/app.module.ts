@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -15,10 +16,12 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     ButtonsModule.forRoot(),
     TooltipModule.forRoot(),
     HttpClientModule,
